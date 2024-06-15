@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .header,
+      .nav,
+      .main,
+      .footer {
+        padding: 1em;
+      }
+      .nav a {
+        margin-right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome</h1>
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <form>
+        <input type="search" name="q" placeholder="Search query" />
+        <input type="submit" value="Go!" />
+      </form>
+    </div>
+
+    <div class="main">
+      <div id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website. We hope you find it useful.</p>
+      </div>
+
+      <div id="about">
+        <h2>About</h2>
+        <p>Learn more about us.</p>
+      </div>
+
+      <div id="services">
+        <h2>Services</h2>
+        <p>Discover our services.</p>
+      </div>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div>
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Website. All rights reserved.</p>
+    </div>
+  </body>
+</html>

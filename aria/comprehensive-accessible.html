@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Web Page Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        padding: 1em;
+      }
+      nav a {
+        margin-right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Accessible Website</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form role="search">
+        <input
+          type="search"
+          name="q"
+          placeholder="Search query"
+          aria-label="Search through site content"
+        />
+        <input type="submit" value="Go!" />
+      </form>
+    </header>
+
+    <main>
+      <section id="home" tabindex="0" aria-labelledby="home-heading">
+        <h2 id="home-heading">Home</h2>
+        <p>
+          Welcome to our accessible website. We are committed to ensuring that
+          everyone can use our site.
+        </p>
+      </section>
+
+      <section id="about" tabindex="0">
+        <h2 id="about-heading">About Us</h2>
+        <p>Learn more about our mission and values.</p>
+      </section>
+
+      <section id="services" tabindex="0" aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Services</h2>
+        <p>We offer a variety of services to meet your needs.</p>
+      </section>
+
+      <section id="contact" tabindex="0" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <form aria-labelledby="contact-heading">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Accessible Website. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+      // Optional JavaScript to enhance accessibility
+      // Ensure that focus is moved to the main content when navigating via the nav links
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.focus();
+          }
+        });
+      });
+    </script> -->
+  </body>
+</html>
