@@ -2,5 +2,5 @@ These examples were compiled mostly from MDN's resources. The basic idea is to t
 
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics#practical_wai-aria_implementations
 
-> [!NOTES]
+> [!NOTE]
 > "WAI-ARIA_basics" by Mozilla Contributors is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
